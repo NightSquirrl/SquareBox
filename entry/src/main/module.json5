@@ -4,18 +4,23 @@
     "type": "entry",
     "description": "$string:module_desc",
     "mainElement": "EntryAbility",
-    "deviceTypes": [
-      "phone",
-      "tablet"
-    ],
-    "deliveryWithInstall": true,
-    "installationFree": false,
-    "pages": "$profile:main_pages",
     "requestPermissions": [
       {
         "name": "ohos.permission.INTERNET"
       }
     ],
+    "deviceTypes": [
+      "phone",
+      "tablet",
+    ],
+    "requestPermissions": [
+      {
+        "name": "ohos.permission.INTERNET"
+      }
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
     "abilities": [
       {
         "name": "EntryAbility",
@@ -49,7 +54,7 @@
             "name": "ohos.extension.backup",
             "resource": "$profile:backup_config"
           }
-        ],
+        ]
       }
     ]
   }

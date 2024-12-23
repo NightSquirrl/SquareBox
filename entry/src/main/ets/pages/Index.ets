@@ -9,7 +9,7 @@ struct Index {
   store:dataPreferences.Preferences | null = null
 
   async  aboutToAppear() {
-    this.store = await dataPreferences.getPreferences(getContext(this),'wts')
+    this.store = await dataPreferences.getPreferences(getContext(this),'squarebox')
     // this.store.put('x','xx')
     // this.store.get('x')
     // this.store.get('x')
